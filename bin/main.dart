@@ -83,13 +83,45 @@ void main() {
   print(nameList1);
 
   //-- for insert method you add index and then the element
-
+  print("Using insert method ");
   List<String> nameList = [];
   nameList.insert(0, "element");
   nameList.insert(1, "element2");
   print(nameList);
 
+  print("Using insertAll method ");
   var myNameList = <String>[];
   myNameList.insertAll(0, ["iterable", "faysal", "ahmed"]);
   print(myNameList);
+
+  print("Here you will get removing data using remove method");
+
+  var myNameListUsingRemoveMethod = <String>[];
+  myNameListUsingRemoveMethod.add("A");
+  myNameListUsingRemoveMethod.add("D");
+  myNameListUsingRemoveMethod.add("C");
+  myNameListUsingRemoveMethod.add("B");
+  myNameListUsingRemoveMethod.add("E");
+  myNameListUsingRemoveMethod.add("G");
+  myNameListUsingRemoveMethod.add("O");
+
+  
+  print(myNameListUsingRemoveMethod);
+  print("Using remove method ");  
+
+  myNameListUsingRemoveMethod.remove("A");
+  print(myNameListUsingRemoveMethod);
+
+
+  print("using removeAt() method using index number");
+  myNameListUsingRemoveMethod.removeAt(1);
+  print(myNameListUsingRemoveMethod);
+
+
+  print("To replace the Exact element then what to do ");
+
+  myNameListUsingRemoveMethod.replaceRange(0, 2, ["i", "o"]);
+  print(myNameListUsingRemoveMethod);
+
+  
 }
