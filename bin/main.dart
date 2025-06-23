@@ -51,18 +51,18 @@ void main() {
   //   print("${i}. Faysal");
   // }
 
-  var name = new List.filled(3, '', growable: false);
-  name[0] = "faysal";
-  name[1] = "ahmed";
-  print(name);
+  // var name = new List.filled(3, '', growable: false);
+  // name[0] = "faysal";
+  // name[1] = "ahmed";
+  // print(name);
 
-  var nameList = <String>[];
+  // var nameList = <String>[];
 
-  for (var i = 0; i < 4; i++) {
-    //nameList.add("Russell");
-    nameList.add("Faysal");
-    print('$i => Faysal ');
-  }
+  // for (var i = 0; i < 4; i++) {
+  //   //nameList.add("Russell");
+  //   nameList.add("Faysal");
+  //   print('$i => Faysal ');
+  // }
 
   // -- > using list as growable string
 
@@ -75,4 +75,21 @@ void main() {
   // nameList.add("Russell");
 
   // print(nameList);
+
+  //-- addAll method is required for multiple element in the same parameter
+  //List<String> nameList = [];
+  var nameList1 = <String>[];
+  nameList1.addAll(["faysal", "ahmed", "Shrabon"]);
+  print(nameList1);
+
+  //-- for insert method you add index and then the element
+
+  List<String> nameList = [];
+  nameList.insert(0, "element");
+  nameList.insert(1, "element2");
+  print(nameList);
+
+  var myNameList = <String>[];
+  myNameList.insertAll(0, ["iterable", "faysal", "ahmed"]);
+  print(myNameList);
 }
