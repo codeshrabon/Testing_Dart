@@ -1,0 +1,163 @@
+--> void main()
+-> This MAIN() method is the head of the program and when we compile a program then at first it will find the main mathod and run it as the starting point 'main()'
+
+
+--> White space and line break 
+Dart do ignore all this white space, tabs and newline that apperas in the program 
+
+--> Case sensetive 
+Dart mainly case-sensetive 
+
+--> Statement ends with semiclone ';'
+Each line you write or statement it need to be end with semiclone';'
+
+--> comment 
+single line comment // 
+mutiline comment /**/
+
+--> Dart data type 
+1. Numbers (integer and Double )
+2. Strings
+3. Boolean (bool)
+4. List & Map (List is an ordered group of objects & Map data type represent a set of values as key-value pairs 
+
+
+Dart Variable 
+var we use it as universal of  other variables (String, int, double) so we can use var instead of ther variable.... 
+
+But there is another variable 'Dynamic'. this dynamic keyword and var keyword both are word same.. 
+
+::::	var = dynamic	::::
+
+:: var = final , const:: 
+
+--> 'final' and 'const' these are use for constant data ... if you initiate a data using final or const then that won't be change later...
+
+final name = "shrabon";
+X name = "ahmed";	--> ERROR
+
+
+--> it use 'var' keyword as "non-type-checking"
+var name = "faysal";
+var num = 39;
+
+--> There is another keyword as we use them on JAVA 
+
+String name = "Faysal";
+int num = 30;
+
+
+
+--> Dynamic keyword 
+this is like var 
+dynamic = 49;
+dynamic = "Faysal";
+
+
+
+--------
+
+
+so we can use store variable data 
+-> var 
+var = "Faysal";
+var = 20; 
+-> instead var we use int  , String , Double 
+int number1 = 40;
+double number2 = 50.0;
+String name = "Faysal";
+
+-> instead var we use dynamic 
+dybamic name = "Faysal";
+dynamic number = 50;
+
+-> instead var we use for constant data is 'final', 'const'
+final fName = "Faysal";
+finale number = 40;
+const lName = "Ahmed";
+const number1 = 41;
+
+--> Now loop 
+
+Deinite	-> for
+
+		-> while
+Indefinite	
+		-> do.. while 
+
+
+
+--------------------------------
+
+print("String");
+
+in print method everything inside act as 'String' ...
+
+in dart... if we want some variable inside of the print method..
+
+var  i = 10;
+for(i ; i<30; i++){
+print(i.toString + ". Faysal");
+print("${i}. Faysal");
+
+--> ${} is this method anything we give it will count as variable..
+
+In loop as we all know that continue statement are use to skip the step.
+
+1-10
+if i want 3 not to print 
+the my statement will be 
+if i == 3
+continue;
+
+it will skip 3 then print till 10;
+
+
+------------
+In Java we used array  alog with List, arrayList many other to store data and 
+In dart we use List mainly so there is no use of array type. 
+
+There is two type of List 
+1. Fix length List  (var myList = new List(5);) creating 'new List(5);' using length size as an object intergating it into a variable name myList...
+2. Growable List --> here var myList = new List(); there is no limit you just assign it. 
+-> var myList = new List();
+-> myList[] = "name1";
+-> myList[] = "name2";
+-> ...
+
+new use of List 
+-->Fix length 
+var nameList = new List.filled(length:10, '', growable:false/true);
+
+
+and 
+
+-> Growable List 
+var nameList = <String>[];
+
+//List<String> nameList = [];
+
+
+nameList.add("Faysal");
+nameList.add("Faysal");
+
+
+---> There is some interseting thing in List inserting data 
+-> List.add(); - for single data 
+-> List.addAll(["name","name"]); - for multiple data using (["name","name"])
+-> List.insert();
+->List.insertAll();
+
+
+
+
+
+
+
+
+
+
+
+
+
+

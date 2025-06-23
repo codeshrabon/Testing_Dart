@@ -57,12 +57,15 @@ void main() {
   print(name);
 
   var nameList = <String>[];
-  
+
   for (var i = 0; i < 4; i++) {
     //nameList.add("Russell");
     nameList.add("Faysal");
     print('$i => Faysal ');
   }
+
+  // -- > using list as growable string
+
   //var nameList = <String>[];
 
   //List<String> nameList = [];
