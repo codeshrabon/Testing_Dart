@@ -42,4 +42,7 @@ myHashMap.addAll({"fName":"Shrabon", "lName":"Ahmed", "age": "27", "collage":"DI
    print(myHashSet);
    print("Length of this HashMap: ${myHashSet.length}");
 
+  print("converting HashSet to List");
+  List<dynamic> myLists = myHashSet.toList();
+  print("Converted to List form HashSet: ${myLists}");
 }
