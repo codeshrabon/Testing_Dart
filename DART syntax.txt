@@ -141,12 +141,235 @@ var nameList = <String>[];
 nameList.add("Faysal");
 nameList.add("Faysal");
 
-
 ---> There is some interseting thing in List inserting data 
 -> List.add(); - for single data 
 -> List.addAll(["name","name"]); - for multiple data using (["name","name"])
--> List.insert();
-->List.insertAll();
+-> List.insert(index,"Name");
+->List.insertAll(index, ["name", "name"]);
+
+--> But in insert(index, element) method you need to specify the index number then the element you give...
+
+
+
+------------------->>>>>>>>>>>>>>>>>
+
+Removing List items
+
+list.remove("variables that i want to delete");
+
+list.removeAt(index); usng it you can specifically delete the item you want..
+
+
+-----------------------------
+Updating the index
+
+List<String> listName = [];
+or 
+var listName = <String>[];
+
+listName.add("A");
+listName.add("B");
+listName.add("C");
+listName.add("D");
+
+listName.replaceRange(0,1, ["H"]);
+
+
+List.replaceRange(start_index, end_Index, Replacement);
+
+List.replaceRange(own index number which one to change, next indext number will be ending point, ["Replacemen]);
+
+
+
+---------------DART Map ----------------------
+in map all are the same concept 
+But there is Key, Value concept is there 
+var myMap = { 
+"name": "Faysal",
+"age" : "27",
+"height" : "6 feet"
+}
+print (myMap);
+
+// adding data in runtime 
+  myMap ["school"] = "MBSC";
+
+Creating map by Constructor::::
+
+1. creating object 'new Map()"
+2. assing to a variable "var newMap = new Map()"
+
+using them in code 
+var newMap = new Map();
+newMap.add("Faysal);
+
+
+Map<dynamic,dynamic> myMapCons= new Map();
+
+  myMapCons ['name'] = "Shrabon";
+  myMapCons ['age'] = "27";
+  
+  myMapCons ['height'] = "6 feet";
+  myMapCons ['collage'] = "DIC";
+
+// for (var myMapLoop in myMapCons) {
+//   print(myMapLoop);
+// }
+  print(myMapCons.keys);
+  print(myMapCons.values);
+  //using .entries help you to get all the element you have entered it shows 
+    print(myMapCons.entries);
+  
+
+  // use of .addAll, .clear, .remove("key")
+
+  Map <dynamic,dynamic> newMapEx = new Map();
+  // to enter mltiple or more then one data into the map
+  newMapEx.addAll({"name":"Russell", "age":"49"});
+
+  print("from new map expriment "+ newMapEx.toString());
+
+
+## using addAll you can add multiple data 
+## using clear it will delete all the data 
+## and using remove this method will remove the exact data using 	the key 
+, 
+
+###############################################
+Using dart Set 
+
+'set' represents a collecton of objects can occur only once 
+List and set are the same 
+but in list we can keep duplicate values but in set we cant 
+
+* Creating object of Set()
+var mySet = new Set();
+
+#if duplicate values are in Set they will be ignored whill compile..
+
+var mySet = new Set();
+mySet("300");
+mySet("401");
+mySet("402");
+
+for (var mySets on mySet){
+print(mySets);
+}
+
+using loop will give you a data in line which we want 
+
+###using Hashmap() 
+
+its similar to Map but 
+in HashMap if you insert data into it 
+then the serial wont be as same serial it can be change 
+this is the difference ..
+Using HashMap it will import a package import 'dart:collection';
+
+var myHashMap = new HashMap();
+myHashMap.add("values");
+myHashMap.add("values");
+myHashMap.add("values");
+
+print(myHashMap);
+
+other things are same as map 
+myHashMap -->
+.addAll
+.remove
+.clear
+.key
+.value
+
+
+
+## HashSet() they are not as similar to HashMap()
+HashMap are with key and values
+but HashSet are to values
+
+you have to add data by .add("values");
+
+HashSet<dynamic> mySet = new HashSet();
+
+mySet.add();
+mySet.addAll();
+mySet.remove();
+mySet.clear();
+
+ HashSet<dynamic> myHashSet = new HashSet(); 
+
+   myHashSet.add("Faysal");
+   myHashSet.add("29");
+   myHashSet.add("MBSC");
+
+   print(myHashSet);
+   print("Using For each loop");
+   for (var myHashSets in myHashSet) {
+    
+     print(myHashSets);
+   }
+   print("Uing remove method");
+   myHashSet.remove("29");
+   print(myHashSet);
+   print("Length of this HashMap: ${myHashSet.length}");
+
+-------------------------------------
+
+### Generics
+
+Till we learn 
+1. List 
+2. Map
+3. Set
+4. HashMap
+5. HashSet
+
+"All are the same as they do the main thing is to collect data...all them togather called as collection framework"
+   ______________________________________________________________
+
+
+## function 
+
+function is mainly out side of the main function 
+and you can call them any time 
+** for function you do not need to create object
+
+void main()
+{
+	 function1();
+	print(function1);
+}
+
+void function1(){
+	var name = "Faysal";
+	print("this is function );
+
+}
+
+----------------------------------------------------------------
+
+### class
+
+out side main method 
+class are just as we work with java 
+using class_ and name_of_the_class
+
+void main(){
+	var classObject = new MyClass(); // you can use new not 								//mendatory in dart 
+
+	var printNewClass = classObject.myMethod();
+	print(printNewClass);
+}
+
+
+class MyClass{
+
+	void myMethod(){
+	print("Faysal");
+}
+
+method and function are same 
+but the differences is method are in side class 
 
 
 
