@@ -1,13 +1,14 @@
-import 'Father.dart';
+
 import 'Son.dart';
 
-void main(){
-
+void main() {
   var obj = new Son();
-  var objFather = new Father();
+  // while you named your class as ABSTRACT after that
+  // you cant create that perticular classes object....
+  //var objFather = new Father();
 
-  print("From father class");
-  objFather.addTwo();
+  // print("From father class");
+  // objFather.addTwo();
 
   print("From the Son class");
   obj.addTwo();

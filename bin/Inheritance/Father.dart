@@ -1,4 +1,4 @@
-class Father {
+abstract class Father {
 
   void addTwo(){
     print(10+20);
