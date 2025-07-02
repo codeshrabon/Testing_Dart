@@ -373,6 +373,117 @@ but the differences is method are in side class
 
 
 
+_________________________________________________________
+Inheritance and overriging..........
+
+Inheritance with override ---> by modifying the parent class method through child class method is method overriding...
+
+using 
+@override 
+is to show that the method has beed overridden...
+
+
+
+
+__________________________________
+Abstract method --- inheritance
+
+
+you cant create an object of abstract class
+
+----------------------------------------
+
+Super --- inheritance 
+
+its mean that using super keywod you can grab something or some method or all the method of parent class in your own child class inside your another method 
+
+
+*********method over ride *********
+
+using a method which inside of a class or any where using it from other class using the same method name @override ing them by force or changing them 
+
+child class have the privilage use of @super 
+its makes him supireor then parent class
+
+
+
+
+***** method over load *******
+its similar with polymorphisom, 
+
+over loading just like using same method name but changing its parameter and mostly changing the parameter 
+
+
+
+____________________________________________________
+
+
+****in dart we dont use method overloading***** 
+
+
+
+but static we do use them 
+
+In a good sence that inside a class if we create a method or any element or properties they got no relation with the class 
+
+class Myclass{
+	 
+	void myName(){
+	print(20+50);
+		}
+
+
+}
+
+the method do not have any realation with the class 
+cause in main method we cleate a object of the class then 
+the object will interact with the method or the properties 
+
+void main(){
+
+var obj = new MyClass();
+obj.myName();
+
+}
+
+
+
+but if we use static keyword with the method 
+
+class Myclass{
+	 
+	static void myName(){
+	print(20+50);
+		}
+
+
+}
+then the method and class will be related and we do not need to create any object to intract with it.....
+
+
+like 
+
+void main(){
+
+MyClass.myName();
+
+}
+
+_____________________________________
+
+dart constructor 
+* constructor vs normal method 
+--> constructor does not have any return type 
+like void class_name()
+its simply the class_name();
+
+simple function or simple method as you like 
+* constructor calling 
+--> no need to create for constructor an object 
+while creating an object for class it autometically create object for constructor....
+--> autometic called by creating object 
+* pass data via constructor 
+
 
 
 
